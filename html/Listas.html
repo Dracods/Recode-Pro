@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listas</title>
+    </head>
+    <body>
+        <h1>Listas</h1>
+        <!-- Existem alguns tipos de listast -->
+        <h3>Lista Ordenada</h3>
+        <!-- Listas ordenadas são classificadas em uma ordem -->
+        <ol><!-- (Ordered list) Tag da lista ordenada-->
+            <li><!-- (List item) Tag do item da lista, cada item deve ter uma -->
+                Item 1;
+            </li>
+            <li>
+                Item 2;
+            </li>
+            <li>
+                Item 3.
+            </li>
+        </ol>
+
+        <h3>Lista Não Ordenada</h3>
+        <!-- Este tipo de lista não possui uma ordem ao lado de seus itens,
+        apenas simbolos-->
+        <ul><!-- (Unordered List) Tag da lista não ordenada -->
+            <li>
+                Item 1;
+            </li>
+            <li>
+                Item 2;
+            </li>
+            <li>
+                Item 3.
+            </li>
+        </ul>
+
+        <h3>Lista de Descrição</h3>
+        <dl><!-- (Description List) Tag da lista de descrição-->
+            <dt><!-- (Define Term) Tag que define o termo/nome do item-->
+                Item 1;
+            </dt>
+            <dd><!-- (Description) Tag que define a descrição do item-->
+                Descrição do item 1.
+            </dd>
+
+            <dt>Item 2;</dt>
+            <dd>Descrição do item 2.</dd>
+
+            <dt>Item 3;</dt>
+            <dd>Descrição do item 3.</dd>
+        </dl>
+        <!-- Podemos usar varios itens para apenas uma descrição
+        e varias descrições para apenas um item-->
+        <dl>
+            <h4>Varios itens</h4>
+            <dt>Item 1;</dt>
+            <dt>Complemento.</dt>
+            <dd>
+                Descrição do item 1.
+            </dd>
+
+            <h4>Varias descrições</h4>
+            <dt>Item 2;</dt>
+            <dd>Descrição do item 2.</dd>
+            <dd>Outra descrição do item 2.</dd>
+        </dl>
+        <h3>Atributo type=""</h3>
+        <!-- O Atributo type="" das listas(OL e UL apenas), define oque vai ser exibido ao lado
+        esquerdo dos items.
+        Os tipos para listas ordenadas são:
+        type="I" == Numeros romanos em maiusculo;
+        type="i" == Numero romanos em minusculo;
+        type="A" == Letras de A a Z em maisculo;
+        type="a" == Letras de a a z em minusculo;
+        type="1" == Lista comum com numeros crescentes, iniciando no 1.
+        
+        Os tipos para listas não ordenadas são:
+        type="none" == Retira o simbolo/caractere do lado esquerdo
+        -->
+        <ol type="I">
+            <li>
+                Item 1;
+            </li>
+            <li>
+                Item 2;
+            </li>
+            <li>
+                Item 3.
+            </li>
+            <li>
+                Item 4.
+            </li>
+        </ol>
+        <!-- Acima a lista ordenada foi alterada para exibir numeros romanos-->
+    </body>
+</html>
