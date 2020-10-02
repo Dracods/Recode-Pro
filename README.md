@@ -8,7 +8,7 @@
 * [x] Lógica de programação :heavy_check_mark:
     * [x] Algoritimo;
     * [x] Orientação a Objetos.
-* [ ] [HTML](html/)
+* [x] [HTML](html/)
 * [ ] [CSS](css/)
 * [ ] [JavaScript](javascript)
     * [ ] JSON;
