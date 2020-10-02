@@ -4,6 +4,9 @@
 <img src="./github/img/logo_recode.png">
 
 ### "O Programa **Recode Pro** visa a formação e a empregabilidade de pessoas de 18 a 39 anos, em situação de maior vulnerabilidade social, como programadores full stack."</p>
+
+<p>O Objetivo deste repositorio é manter salvo todo o progresso feito ao longo deste curso.</p>
+
 # :computer: O que vou aprender :computer:
 * [x] Lógica de programação :heavy_check_mark:
     * [x] Algoritimo;
