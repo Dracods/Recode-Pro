@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <h2>Formulário</h2>
+    <form action="https://foo.com"method="GET"><!-- (Formulário) Tag que define
+        um formulario.
+        O atributo action="" define para onde os dados serão enviados.
+        O atributo method="" define a ação a ser feita. -->
+        <label for="fname">Nome:</label><!-- (Etiqueta) Tag que define uma
+            etiqueta para o input.
+            O atributo for="" indica de qual input é essa label. -->
+        <br>
+        <input type="text" id="fname" name="fname"><!-- (Entrada) Tag que define
+            a entrada de dados pelo usuario.
+            O atributo type="" define que tipo de entrada o usuario vai usar.
+            Os types que existem são:
+                text == (Texto)
+                password == (Senha) 
+                number == (Número)
+                radio == (Botão de rádio para escolha entre varias opções)
+                checkbox == (Caixa de seleção para multiplas escolhas simultaneas)
+                color == (Cor)
+                time == (Tempo)
+                week == (Semana)
+                date == (Data)
+                datetime-local == (Data e hora)
+                email == (E-mail)
+                url == (Link)
+                file == (Arquivo)
+                hidden == (Esconde o input)
+                image == (Imagem)
+                month == (Mês)
+                range == (Alcance(controle deslizante))
+                    range possui três atributos:
+                        min = define o valor minimo do alcance.
+                        max = define o valor maximo do alcance.
+                        step = define quantos numeros você vai avançar.
+                reset == (Limpa todo formulario)
+                search == (Campo de busca)
+                tel == (Telefone)
+
+                submit == (Botão que envia os dados do formulário)
+                -->
+        <br>
+
+        <label for="sname">Sobrenome:</label>
+        <br>
+        <input type="text" id="sname" name="sname">
+        <br>
+
+        <label for="idade">Idade:</strong></label>
+        <br>
+        <input type="number" id="idade" name="idade">
+        <br>
+        
+        <label for="genero">Sexo:</label>
+        <br>
+        <input type="radio" id="Masculino" name="genero">
+        <label for="Masculino">Masculino</label>
+        <br>
+        <input type="radio" id="Feminino" name="genero">
+        <label for="Feminino">Feminino</label>
+        <br>
+        <input type="radio" id="Outros" name="genero" checked>
+        <label for="Outros">Outros</label>
+
+        
+        <h2>Interesse:</h2>
+        <input type="checkbox" id="carro" name="Veiculo1" checked>
+        <label for="carro">Carro</label>
+        <br>
+
+        <input type="checkbox" id="moto" name="Veiculo2">
+        <label for="moto">Moto</label>
+        <br>
+
+        <input type="checkbox" id="bicicleta" name="Veiculo3">
+        <label for="bicicleta">Bicicleta</label>
+        <br>
+
+        <input type="checkbox" id="barco" name="Veiculo4">
+        <label for="barco">Barco</label>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
