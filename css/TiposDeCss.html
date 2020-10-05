@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <!-- CSS = Cascading Style Sheet / Folha de Estilo em Cascata -->
+        <!-- CSS externo: A folha de estilos fica fora do arquivo html
+        para ser aplicada a pagina ela deve ser referenciada atraves da tag <link>
+        A tag link tem três propriedades href=""(é o caminho aonde o arquivo se encontra)
+        Rel=""(A relação deste link com o documento, que no caso do CSS é stylesheet)
+        type="" define o tipo de arquivo que estamos referenciando, neste caso é um arquivo do tipo textual e de CSS (text/css)-->
+        <link href="CSSExterno.css" type="text/css" rel="stylesheet">
+        <!-- CSS interno: A folha de estilos fica dentro da tag <styles> no <head>-->
+        <style>
+            /* A tag <p> é usada como seletor de tipo elemento, é ela quem vai receber
+            as modificações do css */
+            p{
+                /*text-align é uma das varias propriedades que podem ser colocadas no seletor
+                center; é um dos valores desta propriedade
+                text-align: center; é a declaração*/
+                text-align: center;
+            }
+            /*.seletorClasse é um seletor do tipo classe, classes sempre tem um . antes do nome dela*/
+            .seletorClasse{
+                color:blue
+            }
+            /*#seletorID é um seletor do tipo ID, ID's sempre tem um # antes do nome dela*/
+            #seletorID{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- CSS em linha: O estilo é colocado diretamente na tag de abertura
+        Com a propriedade style="" tudo que fica dentro dela vai ser da folha de estilo-->
+        <h1 style="color: wheat;">color: wheat;do CSS em linha</h1>
+        <p class="seletorClasse">text-align: center; do CSS Interno</p>
+        <h2 id="seletorID">font-size: 50px; do CSS Externo</h2>
+    </body>
+</html>
