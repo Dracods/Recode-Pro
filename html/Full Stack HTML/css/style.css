@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+header{
+    background-color: rgb(119, 73, 161);
+}
+main{
+    min-height: 510px;
+}
+main table{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+main p{
+    color: red;
+}
+main tr td{
+    border: solid 2px rgb(119, 73, 161);
+}
+form{
+    margin: 15px;
+}
+footer{
+    margin-top: 50px;
+    background-color:  rgb(89, 53, 122);
+    text-align: center;
+    padding: 10px 0;
+}
+footer{
+    color:white;
+}
