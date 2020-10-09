@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Margem</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            background-color: aliceblue;
+            color: black;
+        }
+        #um{
+            /*Margin controla a margem em volta do elemento,
+            logo ela esta fora do mesmo(Espaçamento externo).
+            a propiedade margin possui 4 valores, sendo eles
+            o tamanho da margem em volta do elemento seguindo a ordem:
+            Topo -> direita -> baixo -> esquerda*/
+            margin: 25px;
+            /*Se você utiliza apenas um valor na margin
+            Esse valor vai ser utilizado em todos os lados*/
+        }
+        #dois{
+            margin: 90px 10px;
+            /*Se você utiliza dois valores, o primeiro vai ser aplicado
+            no topo e em baixo e o segundo na direita e esquerda*/
+        }
+        #tres{
+            margin: 10px 90px 200px;
+            /*Com três valores o primeiro vai ser aplicado no topo,
+            segundo a esquerda e direita e terceiro em baixo*/
+        }
+        #quatro{
+            margin: 10px 0px 10px 200px;
+            /*Aqui cada valor vai ser aplicado a um lado seguindo a ordem
+            explicada acima*/
+        }
+        /*Existe tambem uma versão para cada lado::after
+        margin-top
+        margin-bottom
+        margin-right
+        margin-left
+        Essas versões usam apenas um valor e o mesmo é aplicado
+        apenas para aquele lado selecionado*/
+        /*Podemos pensar que o margin é o espaço externo após a borda*/
+    </style>
+</head>
+    <body>
+        <p id="um">Margem com apenas um valor</p>
+        <p id="dois">Margem com dois valores</p>
+        <p id="tres">Margem com três valores</p>
+        <p id="quatro">Margem com quatro valores</p>
+    </body>
+</html>
