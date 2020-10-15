@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        /*A propriedade display define como um elemento vai
+        ser exibido, ou não. Por padrão os elementos se organizam
+        em blocos(Um embaixo do outro)*/
+        .efeito-mesma-linha {
+            display: inline;
+        }
+        #nao-visivel{
+            display: none;
+        }
+        /*Os valores que display possui são:
+        block: A declaração display: block define o que já conhecemos, 
+        que é a sua opção padrão, ou seja, os elementos do tipo bloco 
+        são organizados um abaixo do outro.
+
+        inline: A declaração display: inline exibe blocos na mesma linha, 
+        fazendo com que ele se adeque ao tamanho do conteúdo que contém. 
+
+        inline-block: A declaração display: inline-block mescla 
+        características dos valores inline e block.
+
+        none: A declaração display: none faz com que o elemento 
+        não seja renderizado.
+        */
+        .efeito-bloco{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="efeito-mesma-linha">Lorem Ipsum</h1>
+    <p class="efeito-mesma-linha">Parágrafo um</p>
+    <p class="efeito-mesma-linha">Parágrafo dois</p>
+
+    <p id="nao-visivel">Este parágrafo não vai aparecer!</p>
+
+    <h2>Otimos sites(Sem nenhum display aplicado):</h2>
+    <a href="https://www.recodepro.org.br/" title="Recode Pro">Recode Pro</a>
+    <a href="https://www.youtube.com/user/cursosemvideo/" title="Guanabara">Curso em Video</a>
+    <a href="https://www.w3schools.com/" title="W3C">W3C</a>
+
+
+    <h2>Otimos sites(Com o display: block):</h2>
+    <a class="efeito-bloco" href="https://www.recodepro.org.br/" title="Recode Pro">Recode Pro</a>
+    <a class="efeito-bloco" href="https://www.youtube.com/user/cursosemvideo/" title="Guanabara">Curso em Video</a>
+    <a class="efeito-bloco" href="https://www.w3schools.com/" title="W3C">W3C</a>
+</body>
+
+</html>
