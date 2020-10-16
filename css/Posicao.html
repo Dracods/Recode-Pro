@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Posição</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        ol{
+            margin: 40px;
+        }
+        #abs{
+            /*position(posição) define a posição do elemento
+            relativo a alguma coisa*/
+            position: absolute;
+            right: 0;
+            /*Tipos de posicionamento:
+            relative: deixa a posição relativa ao do elemento pai.
+
+            absolut: Ignora o elemento pai e usa a pagina como referencia
+            para se posicionar.
+
+            fixed: O elemento fica fixo na pagina, ignora até mesmo o movimento
+            da barra de rolagem.*/
+        }
+        #fixed{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li id="fixed">Item fixado</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li id="abs">Item absoluto</li>
+    </ol>
+</body>
+</html>
