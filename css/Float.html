@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <style>
+        .main{
+            background-color: rgb(118, 89, 165);
+            padding: 20px;
+        }
+        h1{
+            margin: 0;
+        }
+        #fr{
+            background-color: rgb(180, 89, 89);
+            /*Float(flutuar) faz com que o elemento fique
+            flutuando a ordem dentro do elemento pai.*/
+            float: right;
+        }
+        #fl{
+            background-color: rgb(89, 136, 180);
+            float: left;
+        }
+        #nfr{
+            background-color: rgb(180, 89, 89);
+        }
+        #nfl{
+            background-color: rgb(89, 136, 180);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Com float</h1>
+        <div id="fr">
+            <h2>1 Float: right</h2>
+            <p>Descrição</p>
+        </div>
+        <div id="fl">
+            <h2>2 Float: left</h2>
+            <p>Descrição</p>
+        </div>
+        <div>
+            <h2>3 Normal</h2>
+            <p>Descrição</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+        <h1>Sem float</h1>
+        <div id="nfr">
+            <h2>1 Float: right</h2>
+            <p>Descrição</p>
+        </div>
+        <div id="nfl">
+            <h2>2 Float: left</h2>
+            <p>Descrição</p>
+        </div>
+        <div>
+            <h2>3 Normal</h2>
+            <p>Descrição</p>
+        </div>
+    </div>
+
+</body>
+</html>
