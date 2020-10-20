@@ -15,9 +15,11 @@
     * [x] Algoritimo;
     * [x] Orientação a Objetos.
 * [x] [HTML](html/) :heavy_check_mark:
-* [x] [CSS](css/)
+* [x] [CSS Básico](css/)
 * [ ] [JavaScript](javascript)
+    * [ ] Javascript Básico;
     * [ ] JSON;
+* [ ] Bibliotecas e Frameworks Javascript
     * [ ] React;
     * [ ] React.JS;
     * [ ] NodeJS;
@@ -25,7 +27,8 @@
 * [ ] Bootstrap
 * [ ] PHP
 * [ ] Python
-* [ ] NoSQL
+* [ ] Banco de dados
+    * [ ] MySQL;
     * [ ] MongoDB;
     * [ ] Firebird.
 * [ ] SEO
