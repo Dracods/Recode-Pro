@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao Javascript</title>
+    <style>
+        p{
+            text-align: justify;
+        }
+    </style>
+    <!--Interno-->
+    <script>
+        /*Seu codigo Javascript vai aqui
+        As funções são blocos de codigo nomeados, elas podem ser chamadas de qualquer parte do codigo
+        Para criar uma função usamos o function e ao lado o nome dela
+        entre os parenteses podemos pedir valores para serem tratados dentro do codigo
+        entre os colchetes fica seu codigo*/
+        function funcaoTeste(){
+            alert("Hello World");
+            let texto = "Olá mundo!";
+            return texto;
+        }
+        /*Para usarmos essa função devemos apenas chamar seu nome junto com um par de parenteses ao lado*/
+        funcaoTeste();
+        /*assim que a função for chamada ela vai ser executada
+        Neste caso vai aparecer um alerta no navegador com a mensagem: Hello World*/
+
+        /*Também temos as funções anonimas
+        elas são copias de outras funções armazenadas em uma variavel*/
+        let SemNome = funcaoTeste;
+        let SemNomeDois = funcaoTeste();
+        /*Acima armazenamos a funcaoTeste na variavel SemNome,
+        ao copiar a funcao temos duas opções:
+        Se colocarmos apenas o nome da função a variavel vai copiar ela (SemNome)
+        Se colocarmos os parenteses ao final do nome, ela vai executar a função e armazenar o resultado (SemNomeDois)*/
+
+        /*ArrowFunctions (funções seta), nesta função a palavra function é removida e é adicionada uma seta
+        entre os parametros e o bloco de codigo*/
+        let funcaoSeta = (texto) => {
+            let saida = "Tenha um otimo dia " + texto + "!";
+
+            return saida;
+        }
+        console.log(funcaoSeta("Vinicius"));
+        /*pronto criamos uma função seta com nome funcaoSeta que tem um parametro
+        Se quisermos fazer uma função seta sem parametros é só deixar os parenteses vazios*/
+        let funcaoSetaDois = () => {
+            let saida = "Tenha um otimo dia " + "Vinicius" + "!";
+
+            return saida;
+        }
+        console.log(funcaoSetaDois());
+        /*podemos tambem remover o return e a variavel*/
+        let funcaoSetaTres = (texto) => "Tenha um otimo dia "+ texto + "!";
+        console.log(funcaoSetaTres("Vinicius"));
+        
+
+    </script>
+    <!--Externo-->
+    <!--Como o html carrega tudo de cima para baixo pode ocorrer
+    do carregamento demorar demais ao chegar na parte dos scripts(devido a sua complexidade)
+    para reduzirmos a lentidão ao carregar a pagina podemos usar duas propriedades: Async e Defer-->
+    <!--Async: -->
+    <script src="script.js" async></script>
+</head>
+<body>
+    <em>
+        <p>"JavaScript é uma linguagem de script orientada a objetos, multiplataforma. É uma linguagem pequena e leve.<br>
+        Dentro de um ambiente de host (por exemplo, um navegador web) o JavaScript pode ser ligado aos objetos 
+        deste ambiente<br>para prover um controle programático sobre eles."</p>
+        <p>-Mozilla</p>
+    </em>
+    <p>
+        O Javascript interage com todos os tipos de elementos da pagina,
+        pode trabalhar com variaveis, manipular elementos, fazer tratamento de dados
+        tudo isso em tempo real.
+
+        Pode ser usado nas paginas html de forma semelhante ao 
+        css(em linha, interno e externo), com a diferença que:<br>
+    </p>
+    <ul>
+        <li><p>Se for em linha em vez de style, ele deve ser chamado através de uma ação(ou ele vai ser executado logo que a pagina for carregada).</p></li>
+        <li><p>Interno ele deve ficar no head dentro da tag &lt;script&gt; e deve ser feita uma função para ser referenciada.</p></li>
+        <li><p>Externo a extensão é .js e a referencia é feita diretamente na tag &lt;script&gt; atraves do src=""</p></li>
+        <ul style="list-style: none;">
+            <li><p>Como o html carrega tudo de cima para baixo pode ocorrer do carregamento<br> 
+                demorar demais ao chegar na parte dos scripts(ao chegar lá ele pausa o carregamento do html até terminar)</p>
+                <img src="imagens/noasyncdefer.png"><br>
+                <h6>Fonte: https://braziljs.org/artigos/diferencas-entre-async-e-defer/</h6>
+                <p>Para reduzirmos a lentidão ao carregar a pagina podemos usar duas propriedades: </p>
+            </li>
+            <li><h3>Async:</h3> <p>A propriedade async avisa o navegador para não pausar o carregamento da pagina ao chegar no script,<br> 
+                carregando e executando os dois ao mesmo tempo.</p>
+                <img src="imagens/async.png">
+                <h6>Fonte: https://braziljs.org/artigos/diferencas-entre-async-e-defer/</h6>
+            </li>
+            <li>
+                <h3>Defer:</h3> <p>A propriedade defer também não pausa o carregamento da pagina ao chegar no script,<br> 
+                    porém só executa os scripts após a pagina html ester carregada totalmente</p>
+                    <img src="imagens/async.png">
+                    <h6>Fonte: https://braziljs.org/artigos/diferencas-entre-async-e-defer/
+            </li>
+        </ul>
+    </ul>
+    
+</body>
+</html>
