@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Full Stack</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgb(187, 187, 187)">
+    <!-- Menu -->
+    <nav id="MainMenu">
+        <a href="index.html"><img id="logo" src="./imagens/FS Logo.png" alt="Fullstack Logo"></a>
+        <a href="index.html">PAGINA INICIAL</a>
+        <a href="produtos.html">PRODUTOS</a>
+    </nav>
+
+    <!-- Formulário para envio de mensagem -->
+    <main class="formulario">
+        <form>
+            <label for="nome"><strong>Nome:</strong></label>
+            <br>
+            <input type="text" id="nome" name="nome">
+            <br>
+
+            <label for="email"><strong>E-Mail:</strong></label>
+            <br>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="message"><strong>Message: </strong></label>
+            <br>
+            <textarea id="message" name="message" rows="10" cols="59" placeholder="Digite sua mensagem..."></textarea>
+            <br>
+            
+            <h4>Aceita nossas políticas de publicidade?</h4>
+            <input type="radio" id="aceita" name="politica">
+            <label for="aceita"><strong>Sim</label>
+            <input type="radio" id="recusa" name="politica">
+            <label for="recusa"><strong>Não</strong></label>
+            <br>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/Vinicius-Brito-Costa" title="Github" target="_blank"><p>&copy; Vinicius Brito Costa</p></a>
+    </footer>
+</body>
+
+</html>

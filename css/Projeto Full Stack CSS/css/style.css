@@ -1,0 +1,155 @@
+*{
+    font-family: Arial;
+}
+body{
+    margin:0;
+}
+header{
+    color: white;
+    text-align: center;
+}
+#MainMenu, #logo{
+    width: 100%;
+    background-color: rgb(119, 73, 161);
+    display: inline-block;
+    vertical-align: middle;
+}
+#MainMenu a{
+    color: white;
+    
+    margin-right: 20px;
+    transition-duration: 1s;
+    text-decoration: underline rgba(255, 255, 255, 0);
+}
+#MainMenu a:hover{
+    text-decoration: underline rgba(255, 255, 255, 1);;
+    transition-duration: .5s;
+}
+#logo{
+    width: 60px;
+}
+#linkListaProdutos{
+    color: white;
+    display: inline-flex;
+    background-color: rgb(168, 142, 192);
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 80px;
+}
+#linkListaProdutos div{
+    min-width: 160px;    
+    margin: auto;
+}
+#linkListaProdutos div p:hover, #linkListaProdutos div h3:hover{
+    cursor: pointer;
+    transition: .3s;
+    color:rgb(119, 73, 161);
+}
+#linkListaProdutos .marcas{
+    background-color: rgb(168, 142, 192);
+    padding: 5px;
+    margin: 0;
+    display: none;
+    transition: 1s;
+}
+.linkListaProdutos a{
+    text-decoration: none;
+}
+.linkListaProdutos ul{
+    list-style: none;
+    text-decoration: underline;
+}
+.produto{
+    width: 100%;
+    min-width: 220px;
+    margin: 10px;
+    height: 360px;
+    text-align: center;
+    border: solid 2px rgb(119, 73, 161);
+    display: block;
+}
+.produto p{
+    border-top: solid 2px rgb(119, 73, 161);
+    text-decoration: line-through;
+    color: red;
+    font-weight: bold;
+    margin: 5px;
+}
+.produto h4{
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.produto button{
+    border: none;
+    background-color: rgb(119, 73, 161);
+    color: white;
+    height: 30px;
+    width: 150px;
+    margin-top: 5px;
+    font-weight: bold;
+    
+}
+.produto button:hover{
+    transition: .3s;
+    background-color: rgb(168, 142, 192);
+}
+.imagemProduto{
+    margin: 10px;
+    height: 200px;
+}
+.produtos{
+
+    width: 75%;
+    margin: 20px auto;
+    display: block;
+}
+.linha_produtos{
+    width: 100%;
+    display: inline-flex;
+}
+form{
+    height: 430px;
+    width: 400px;;
+    margin: 15px auto;
+    margin-bottom: 0;
+    padding: 15px;
+    padding-bottom: 0;
+    border: solid 4px rgb(119, 73, 161);
+}
+input{
+    margin: 5px 0;
+    border: solid 1px rgb(119, 73, 161);
+}
+#submit{
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(119, 73, 161);
+}
+#submit:hover{
+    background-color: rgb(168, 142, 192);
+}
+textarea{
+    resize: none;
+}
+main{
+    min-height: 560px;
+}
+.formulario{
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+}
+footer{
+    margin-top: 20px;
+    background-color:  rgb(89, 53, 122);
+    text-align: center;
+    padding: 10px 0;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
