@@ -15,7 +15,7 @@
     * [x] Algoritimo;
     * [x] Orientação a Objetos.
 * [x] [HTML](html/) :heavy_check_mark:
-* [x] [CSS Básico](css/)
+* [x] [CSS Básico](css/) :heavy_check_mark:
 * [ ] [JavaScript](javascript)
     * [ ] Javascript Básico;
     * [ ] JSON;
