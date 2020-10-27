@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+    <script>
+        function Somar(num1, num2) {
+            if(num1 && num2)
+            {
+                alert("O Resultado da soma é: " + (parseFloat(num1) + parseFloat(num2)));
+            }
+            else{
+                alert("Valor digitado é invalido.");
+            }
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            background-color: pink;
+            color: white;
+            font-family: 'Arial';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            margin-top: 10px;
+            color: white;
+            width: 285px;
+            background-color:  rgb(247, 127, 187);
+            border: none;
+            font-weight: bold;
+            position: relative;
+        }
+        button:hover{
+            background-color:rgb(247, 113, 218);
+            font-weight: bolder;
+            padding: 10px;
+            position: relative;
+        }
+        input{
+            color: white;
+            margin-left: 10px;
+            background-color: rgb(255, 212, 219);
+            border: solid 1px white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Minha primeira calculadora :3</h2>
+    <label for="numero1">Primeiro Numero:</label>
+    <input type="number" id="numero1"><br>
+    <label for="numero2">Segundo Numero:</label>
+    <input type="number" id="numero2"><br>
+    <button onclick="Somar(document.getElementById('numero1').value, document.getElementById('numero2').value)">Calcular!</button>
+
+</body>
+
+</html>
