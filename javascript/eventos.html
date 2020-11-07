@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <script src="script.js">
+        function alertaInterno(){
+            alert('Evento Ativado');
+        }
+    </script>
+</head>
+<body>
+    <!-- O HTML tem eventos e quando ativados 
+    fazem alguma ação. Abaixo vamos ver alguns exemplos
+    usados em conjunto com o javscript-->
+    <h1>Eventos</h1>
+    <h2>Eventos do Mouse</h2>
+    <h3>Ao clicar no elemento(onclick)</h3>
+    <!--O Javascript abaixo está feito na propria linha-->
+    <button onclick="alert('Evento Ativado')">Clique aqui</button>
+    <h3>Ao clicar duas vezes no elemento(ondblclick)</h3>
+    <!--O Javascript abaixo está sendo feito internamente-->
+    <button ondblclick="alertaInterno()">Clique aqui</button>
+    <h3>Ao movimentar o ponteiro por cima do elemento(onclick)</h3>
+    <!--O Javascript abaixo está sendo feito externamente-->
+    <button onmouseover="alertaExterno()">Clique aqui</button>
+</body>
+</html>
