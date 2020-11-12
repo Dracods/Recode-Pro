@@ -62,7 +62,7 @@
             </section>
             <section class="produtos">
                 <div class="container">
-                    <?php include("pages/product_load.php")?>
+                    <?php include("pages/product_load_v2.php")?>
                 </div>
             </section>
         </section>

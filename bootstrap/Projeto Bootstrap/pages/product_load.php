@@ -1,30 +1,22 @@
 <?php
-include("conexao.php");
-$sql = "select * from produtos";
-$resultado = mysqli_query($conexao, $sql);
-while ($row = mysqli_fetch_assoc($resultado)) {
-    $nome = $row['nome'];
-    $preco_antigo = $row['preco_antigo'];
-    $preco_atual = $row['preco_atual'];
-    $promo = $row['promocao'];
+$link = file_get_contents("http://localhost/Projeto%20Bootstrap/contentJson.php?table=produtos");
+$dados = json_decode($link, true);
+foreach($dados as $key => $valor){
+    $nome = $valor["nome"];
+    $preco_antigo = $valor["preco_antigo"];
+    $preco_atual = $valor["preco_atual"];
+    $promo = $valor["promocao"];
     if ($preco_antigo == "") {
         $preco_antigo = "&nbsp;";
-    } 
-    else 
-    {
+    } else {
         $preco_antigo = "R$" . $preco_antigo;
     }
-    if ($promo != "") 
-    {
+    if ($promo != "") {
         $promo = "-" . $promo . "%";
     }
-    else{
-        $promo = "";
-    }
-
-    $id = $row['categoria_produto'];
-    $classe = $row['sub_categoria'];
-    $endereco_imagem = $row['nome_imagem'];
+    $id = $valor["categoria_produto"];
+    $classe = $valor["sub_categoria"];
+    $endereco_imagem = $valor["nome_imagem"];
 ?>
     <div class='box-produtos <?php echo $classe ?> col' id='<?php echo $id ?>'>
         <form onclick="GoTo('produto.php'), this.submit()"role="button" method="GET" action="produto.php">
@@ -36,12 +28,10 @@ while ($row = mysqli_fetch_assoc($resultado)) {
                     <li class="preco-atual text-light mx-0 pl-1 pr-0 px-0 py-0 container-fluid"><p><?php echo "R$ " . $preco_atual ?></p></li>
                     <li class="promo bg-danger mx-0 px-0 mx-0-sm px-0-sm mx-1 px-1 "><p><?php echo $promo ?></p></li>
                 </ul>
-                <input typer="hidden" name="id_produto" style="display: none" value="<?php echo $row['id_produto'] ?>"></input>
+                <input typer="hidden" name="id_produto" style="display: none" value="<?php echo $valor['id_produto'] ?>"></input>
             </div>
         </form>
     </div>
 <?php
-
 }
-mysqli_close($conexao);
 ?>
