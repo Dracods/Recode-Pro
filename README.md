@@ -42,14 +42,12 @@ Ferramentas usadas até o momento:
 
 ### Autor
 ---
-
 <a href="#">
- <img style="border-radius: 50%;" src="./github/img/avatar.jpg" width="100px;" alt=""/>
+ <img style="border-radius: 50%;overflow:hidden" src="https://github.com/Vinicius-Brito-Costa.png" width="100px;" alt=""/>
  <br />
- <sub><b>Vinicius Brito</b></sub></a> <a href="#" title="FuturoPortifólio">:suspect:</a>
+ <sub><b>Vinicius Brito</b></sub></a> <a href="#" title="Futuro Portifólio">:suspect:</a>
 
 
 👋🏽 Entre em contato!
 
-[![Twitter Badge](https://img.shields.io/badge/-@dracods-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/dracods) [![Linkedin Badge](https://img.shields.io/badge/-Vinicius-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vinicius-brito-costa-150b9b158/)](https://www.linkedin.com/in/vinicius-brito-costa-150b9b158/) 
-[![Gmail Badge](https://img.shields.io/badge/-viniciusbc46@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:viniciusbc46@hotmail.com)](mailto:viniciusbc46@hotmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Vinicius-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vinicius-brito-costa-150b9b158/)](https://www.linkedin.com/in/vinicius-brito-costa-150b9b158/) [![Gmail Badge](https://img.shields.io/badge/-viniciusbc46@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:viniciusbc46@hotmail.com)](mailto:viniciusbc46@hotmail.com)
